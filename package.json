@@ -4,12 +4,15 @@
   "description": "Repository Menjadi Back-End Developer Expert",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0"
   }
 }
