@@ -1,8 +1,10 @@
 const MathBasic = {
-  add: function add() {},
-  subtract: function subtract() {},
-  multiply: function multiply() {},
-  divide: function add() {},
+  add: () => {},
+  subtract: () => {},
+  multiply: () => {},
+  divide: () => {},
 };
+
+console.log(typeof MathBasic.add);
 
 module.exports = MathBasic;
