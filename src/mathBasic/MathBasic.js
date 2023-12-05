@@ -26,9 +26,8 @@ const MathBasic = {
       throw new Error("function add only accept two parameter");
     }
 
-    // mendapatkan array ke 0 dan ke 1
-    const a = args[0];
-    const b = args[1];
+    // mendapatkan array ke 0 dan ke 1 dengan destructuring array
+    const [a, b] = args;
 
     if (typeof a !== "number" || typeof b !== "number") {
       throw new Error("function only accept parameter number");
