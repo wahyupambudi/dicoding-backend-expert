@@ -32,6 +32,8 @@ const MathBasic = {
     if (typeof a !== "number" || typeof b !== "number") {
       throw new Error("function only accept parameter number");
     }
+
+    return a + b;
   },
   subtract: () => {},
   multiply: () => {},

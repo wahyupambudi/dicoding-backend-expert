@@ -4,7 +4,7 @@
   "description": "Repository Menjadi Back-End Developer Expert",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll --coverage"
   },
   "keywords": [],
   "author": "",
