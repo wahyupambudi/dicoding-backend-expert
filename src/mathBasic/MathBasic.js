@@ -20,23 +20,34 @@
 //         Harus mengembalikan nilai a / b ketika diberikan dua parameter number
 
 const MathBasic = {
-  add: (...args) => {
-    // args dapat menggabungkan seluruh parameter menjadi array
+  _validateArgs(args) {
     if (args.length !== 2) {
-      throw new Error("function add only accept two parameter");
+      throw new Error("fungsi hanya menerima dua parameter");
     }
 
-    // mendapatkan array ke 0 dan ke 1
-    const a = args[0];
-    const b = args[1];
+    const [a, b] = args;
 
     if (typeof a !== "number" || typeof b !== "number") {
-      throw new Error("function only accept parameter number");
+      throw new Error("fungsi hanya menerima parameter number");
     }
+    return args;
   },
-  subtract: () => {},
-  multiply: () => {},
-  divide: () => {},
+  add(...args) {
+    const [a, b] = this._validateArgs(args);
+    return a + b;
+  },
+  subtract(...args) {
+    const [a, b] = this._validateArgs(args);
+    return a - b;
+  },
+  multiply(...args) {
+    const [a, b] = this._validateArgs(args);
+    return a * b;
+  },
+  divide(...args) {
+    const [a, b] = this._validateArgs(args);
+    return a / b;
+  },
 };
 
 module.exports = MathBasic;
